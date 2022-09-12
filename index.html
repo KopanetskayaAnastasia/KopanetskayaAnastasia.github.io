@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Моя страница</title>
+</head>
+<body>
+<ol>
+    <h1>Задание №1 в HTML</h1>
+    <h1>Примеры:</h1>
+    <li><a href= "http://www.example.com">абсолютная гиперссылка на главную страницу сайта example.com</a></li>
+    <li><a href= "https://example.com">абсолютная на главную сайта example.com в протоколе https</a> </li>
+    <li><a href= "ftp://ftp.stat.duke.edu">ссылка на файл на сервере FTP без авторизации</a> </li>
+    <li><a href= "ftp://user:123@example.com/example.com">ссылка на файл на сервере FTP с авторизацией</a> </li>
+    <li><a href= "https://ru.wikipedia.org/wiki/%D0%A1%D0%BE%D0%B1%D0%B0%D0%BA%D0%B0#%D0%A1%D0%BE%D0%B1%D0%B0%D0%BA%D0%B8-%D0%BF%D0%BE%D0%BC%D0%BE%D1%89%D0%BD%D0%B8%D0%BA%D0%B8">ссылка на фрагмент страницы некоторого сайта</a> </li>
+    <li><a href= "#footer">ссылка на фрагмент текущей страницы</a> </li>
+    <li><a href= "https://www.wildberries.ru/catalog/97858278/detail.aspx?targetUrl=GP">ссылка с двумя параметрами в URL</a> </li>
+    <li><nav>
+      <ol>
+       <li> <a href="D:\Настя\hight hight" title="Главная">Главная</a></li>
+       <li><a href="#kostyumy-dlya-balnyh-tancev-1.jpg" title="Костюм">Картинка</a></li>
+      </ol>
+    </nav>
+    </li>
+     
+    <li><a>ссылка без href</a></li>
+    <li><a href="">ссылка с пустым href=""</a></li>
+    <li><a href= "http://example.com"class="nolink">ссылка, по которой запрещен переход поисковикам</a></li>
+    <li><a href="https://example.com"><!--noindex-->ссылка, запрещенная для индексации поисковиками<!--/noindex--></a></li>
+    <li> ссылка внутри <a href="http:example.com">here</a> абзаца</li>
+    <li>ссылку-изображение <a href="sample.html"><img src="images/sample.gif" width="80"
+      height="50" alt="Example"></a></li>
+    <li>ссылки из прямоугольных и круглых областей картинки<img src="фигуры.png" usemap="#map0" alt="Map" width="785" 
+      height="467">
+      <map name="map0">
+      <area shape="rect" coords="333,136,516,243" href="https://ru.wikipedia.org/wiki/%D0%95%D0%BB%D0%B8%D0%B7%D0%B0%D0%B2%D0%B5%D1%82%D0%B0_II" alt="Прямоугольник">
+      <area shape="circle" coords="169,183,57" href="https://ru.wikipedia.org/wiki/%D0%91%D0%BE%D0%BB%D1%8C%D1%88%D0%BE%D0%B9_%D0%9B%D0%BE%D0%BD%D0%B4%D0%BE%D0%BD" alt="Круг">
+      
+  </map> </li>
+    <li><a href= "настена.html">относительную на страницу в текущем каталоге </a></li>
+    <li><a href= "hight/demo.html">относительную на страницу в текущем каталоге hight</a></li>
+    <li><a href= "../demo.html">относительную на страницу в каталоге уровнем выше текущего</a></li>
+    <li><a href= "../../form.html">относительную на страницу в каталоге двумя уровнями выше</a></li>
+    <li><a href= "/настена.html">сокращенная ссылка на главную</a></li>
+    <li><a href="e3a2c1198dae38b52a8ef67bafac6002.jpg">сокращенная ссылка на внутреннюю</a>
+</ol>
+            <form>
+              <label>
+              Ваше Имя:<br>
+              <input name="field-name-1" >
+              </label><br>
+              <label>
+                  Еmail:<br>
+                  <input name="field-email" type="email">
+              </label><br>
+              <label>
+                  Дата рождения:<br>
+                  <input name="field-date"  type="date">
+              </label><br>
+              Пол:<br>
+              <label><input type="radio" checked="checked" name="radio-group-1"/>Мужской</label>
+              <label><input type="radio" name="radio-group-1"/>Женский</label>
+              <label><input type="radio" checked="checked" name="radio-group-1"/>Пока думаю</label><br>
+              Количество конечностей:<br>
+           <div class="form_radio_btn">
+    <input id="radio-1" type="radio" name="radio" value="1" checked>
+    <label for="radio-1"> 1</label>
+  </div>
+   
+  <div class="form_radio_btn">
+    <input id="radio-2" type="radio" name="radio" value="2">
+    <label for="radio-2"> 2</label>
+  </div>
+   
+  <div class="form_radio_btn">
+    <input id="radio-3" type="radio" name="radio" value="3">
+    <label for="radio-3">3</label>
+  </div>
+   
+  <div class="form_radio_btn">
+    <input id="radio-1" type="radio" name="radio" value="1" checked>
+    <label for="radio-1">4</label>
+  </div>
+   
+  <div class="form_radio_btn">
+    <input id="radio-2" type="radio" name="radio" value="2">
+    <label for="radio-2">5</label>
+  </div>
+   <form method="get">
+              <p>
+                  <label for="phone">Выберите Сверхспособность:</label>
+                  <select id="Сверхспособности" name ="Сверхспособности">
+                      <option value="бессмертие">проезжать зайцем в трамвае</option>
+                      <option value="прохождение сквозь стены">левитирую по вечерам</option>
+                      <option value="Левитация">помнить все</option>
+                      <option value="есть и не толстеть">есть и не толстеть</option>
+                  </select>
+              </p>
+              <p>
+  
+   
+  
+  </div><br>
+              
+  Биография:<br>
+                  <textarea name="field-name-2"></textarea>
+              </label><br>
+              Чекбокс:<br />
+              <label><input type="checkbox" name="check-1">Ознакомлен</label><br>
+              <input type="submit" value="Отправить">
+          </form>
+    </form>
+          <footer>
+              <a id="footer"></a>
+          </footer>
+  <table border="1"
+                         bgcolor="#FFE4C4"
+                         height="100"
+                         cellpadding="10"
+                         style="width:100%; border-radius:5px;">
+
+      </table>
+      </body>
+  </html>
