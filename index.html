@@ -22,7 +22,7 @@
      
     <li><a>ссылка без href</a></li>
     <li><a href="">ссылка с пустым href=""</a></li>
-    <li><a href= "http://example.com"rel="nofollow">ссылка, по которой запрещен переход поисковикам</a></li>
+    <li><a href= "http://example.com" rel="nofollow">ссылка, по которой запрещен переход поисковикам</a></li>
     <!--noindex--><li><a href="https://example.com">ссылка, запрещенная для индексации поисковиками</a></li><!--/noindex-->
     <li> ссылка внутри <a href="http://example.com">here</a> абзаца</li>
     <li>ссылку-изображение <a href="sample.html"><img src="images/sample.gif" width="80"
@@ -52,7 +52,7 @@
               <label>Дата рождения:</label>
                   <input name="field-date"  type="date">
               <br>
-              <labe>Пол:</labe>
+              <label>Пол:</label>
               <label><input type="radio" checked="checked" name="radio-group-1"/>Мужской</label>
               <label><input type="radio" name="radio-group-1"/>Женский</label>
               <label><input type="radio" checked="checked" name="radio-group-1"/>Пока думаю</label><br>
@@ -98,9 +98,12 @@
   <label>Биография:</label>
                   <textarea name="field-name-2"></textarea>
               <br>
-              <label><input type="checkbox" name="check-1">Ознакомлен<br>
+                
+              <label>Ознакомлен</label>
+                <input type="checkbox" name="check-1">
+                <br>
               <input type="submit" value="Отправить">
-            </label>
+            
     </form>
           <footer>
               <a id="footer"></a>
