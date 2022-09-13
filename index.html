@@ -1,12 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang ="ru">
 <head>
-<title>Моя страница</title>
+<title>Задание №1 в HTML</title>
 </head>
 <body>
 <ol>
-    <h1>Задание №1 в HTML</h1>
-    <h1>Примеры:</h1>
     <li><a href= "http://www.example.com">абсолютная гиперссылка на главную страницу сайта example.com</a></li>
     <li><a href= "https://example.com">абсолютная на главную сайта example.com в протоколе https</a> </li>
     <li><a href= "ftp://ftp.stat.duke.edu">ссылка на файл на сервере FTP без авторизации</a> </li>
@@ -16,7 +14,7 @@
     <li><a href= "https://www.wildberries.ru/catalog/97858278/detail.aspx?targetUrl=GP">ссылка с двумя параметрами в URL</a> </li>
     <li><nav>
       <ol>
-       <li> <a href="D:\Настя\hight hight" title="Главная">Главная</a></li>
+       <li> <a href="http://example.com" title="Главная">Главная</a></li>
        <li><a href="#kostyumy-dlya-balnyh-tancev-1.jpg" title="Костюм">Картинка</a></li>
       </ol>
     </nav>
@@ -24,9 +22,9 @@
      
     <li><a>ссылка без href</a></li>
     <li><a href="">ссылка с пустым href=""</a></li>
-    <li><a href= "http://example.com"class="nolink">ссылка, по которой запрещен переход поисковикам</a></li>
-    <li><a href="https://example.com"><!--noindex-->ссылка, запрещенная для индексации поисковиками<!--/noindex--></a></li>
-    <li> ссылка внутри <a href="http:example.com">here</a> абзаца</li>
+    <li><a href= "http://example.com"rel="nofollow">ссылка, по которой запрещен переход поисковикам</a></li>
+    <!--noindex--><li><a href="https://example.com">ссылка, запрещенная для индексации поисковиками</a></li><!--/noindex-->
+    <li> ссылка внутри <a href="http://example.com">here</a> абзаца</li>
     <li>ссылку-изображение <a href="sample.html"><img src="images/sample.gif" width="80"
       height="50" alt="Example"></a></li>
     <li>ссылки из прямоугольных и круглых областей картинки<img src="фигуры.png" usemap="#map0" alt="Map" width="785" 
@@ -44,23 +42,21 @@
     <li><a href="e3a2c1198dae38b52a8ef67bafac6002.jpg">сокращенная ссылка на внутреннюю</a>
 </ol>
             <form>
-              <label>
-              Ваше Имя:<br>
+              <label>Ваше Имя:</label><br>
               <input name="field-name-1" >
-              </label><br>
+              <br>
               <label>
-                  Еmail:<br>
+                  Еmail:</label>
                   <input name="field-email" type="email">
-              </label><br>
-              <label>
-                  Дата рождения:<br>
+              <br>
+              <label>Дата рождения:</label>
                   <input name="field-date"  type="date">
-              </label><br>
-              Пол:<br>
+              <br>
+              <labe>Пол:</labe>
               <label><input type="radio" checked="checked" name="radio-group-1"/>Мужской</label>
               <label><input type="radio" name="radio-group-1"/>Женский</label>
               <label><input type="radio" checked="checked" name="radio-group-1"/>Пока думаю</label><br>
-              Количество конечностей:<br>
+              <label>Количество конечностей:</label>
            <div class="form_radio_btn">
     <input id="radio-1" type="radio" name="radio" value="1" checked>
     <label for="radio-1"> 1</label>
@@ -77,47 +73,37 @@
   </div>
    
   <div class="form_radio_btn">
-    <input id="radio-1" type="radio" name="radio" value="1" checked>
-    <label for="radio-1">4</label>
+    <input id="radio-4" type="radio" name="radio" value="1" checked>
+    <label for="radio-4">4</label>
   </div>
    
   <div class="form_radio_btn">
-    <input id="radio-2" type="radio" name="radio" value="2">
-    <label for="radio-2">5</label>
+    <input id="radio-5" type="radio" name="radio" value="2">
+    <label for="radio-5">5</label>
   </div>
-   <form method="get">
+  <br>
               <p>
-                  <label for="phone">Выберите Сверхспособность:</label>
+                  <label>Выберите Сверхспособность:</label>
                   <select id="Сверхспособности" name ="Сверхспособности">
                       <option value="бессмертие">проезжать зайцем в трамвае</option>
                       <option value="прохождение сквозь стены">левитирую по вечерам</option>
                       <option value="Левитация">помнить все</option>
                       <option value="есть и не толстеть">есть и не толстеть</option>
                   </select>
-              </p>
-              <p>
-  
+              </p>  
    
   
-  </div><br>
+  <br>
               
-  Биография:<br>
+  <label>Биография:</label>
                   <textarea name="field-name-2"></textarea>
-              </label><br>
-              Чекбокс:<br />
-              <label><input type="checkbox" name="check-1">Ознакомлен</label><br>
+              <br>
+              <label><input type="checkbox" name="check-1">Ознакомлен<br>
               <input type="submit" value="Отправить">
-          </form>
+            </label>
     </form>
           <footer>
               <a id="footer"></a>
           </footer>
-  <table border="1"
-                         bgcolor="#FFE4C4"
-                         height="100"
-                         cellpadding="10"
-                         style="width:100%; border-radius:5px;">
-
-      </table>
       </body>
   </html>
